@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="https://ms-vsliveshare.gallerycdn.vsassets.io/extensions/ms-vsliveshare/vsliveshare/0.2.399/1524081584622/Microsoft.VisualStudio.Services.Icons.Default">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Visual Studio Live Share Guestbook :: Build 2018</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <script>window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+    
+      return t;
+    }(document, "script", "twitter-wjs"));</script>
+    <br />
+    <br />
+    <h2 style="margin-bottom: 15px">Visual Studio Live Share around the world!</h2>
+    <div id="myMap" style='position:relative;width:915px;height:400px; border: 1px solid #999'></div>
+    <script type="text/javascript">
+    
+    function GetMap() {
+      var map = new Microsoft.Maps.Map('#myMap', {
+          credentials: 'Aoj1fy4YAzycGalaBO78mle0i7ugx4q46SwWrMPCQYsKbVQ1-Ubq6Q17xlrxM-1W',
+          animate: true,
+          showDashboard:false,
+  useInertia: false,
+  enableSearchLogo: false,
+  enableClickableLogo: false,
+          zoom: 2
+      });
+
+      var center = map.getCenter();
+
+      //Create custom Pushpin
+      var pin = new Microsoft.Maps.Pushpin(center, {
+            title: 'Seattle',
+            text: '9'
+        });
+
+        //Add the pushpin to the map
+        map.entities.push(pin);
+
+        var pin2 = new Microsoft.Maps.Pushpin(new Microsoft.Maps.Location(46.729553, -94.68589980000002), {
+            title: 'Minneapolis',
+            text: '1'
+        });
+
+        //Add the pushpin to the map
+        map.entities.push(pin2);
+
+        var pin3 = new Microsoft.Maps.Pushpin(new Microsoft.Maps.Location(40.0149856, -105.27054559999999), {
+            title: 'Boulder',
+            text: '1'
+        });
+
+        //Add the pushpin to the map
+        map.entities.push(pin3);
+
+        var pin4 = new Microsoft.Maps.Pushpin(new Microsoft.Maps.Location(28.5383355, -81.37923649999999), {
+            title: 'Orlando',
+            text: '1'
+        });
+
+        //Add the pushpin to the map
+        map.entities.push(pin4);
+
+var pin5 = new Microsoft.Maps.Pushpin(new Microsoft.Maps.Location(47.36667,8.55), {
+            title: 'Zurich',
+            text: '5'
+        });
+
+        //Add the pushpin to the map
+        map.entities.push(pin5);
+    }
+      </script>
+    <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=Aoj1fy4YAzycGalaBO78mle0i7ugx4q46SwWrMPCQYsKbVQ1-Ubq6Q17xlrxM-1W' async defer></script>
+  </body>
+</html>

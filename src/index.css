@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 0.2em;
+  padding: 0;
+  color: plum;
+  text-align: left;
+  font-size: 2em;
+}
+
+.App {
+  width: 920px;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  margin-bottom: 2.5em;
+  text-align: left;
+  color: #666;
+  font-weight: bold;
+}
+
+.container {
+  position: relative;
+}
+
+.container::after {
+  content: "";
+  background: url(https://ms-vsliveshare.gallerycdn.vsassets.io/extensions/ms-vsliveshare/vsliveshare/0.2.399/1524081584622/Microsoft.VisualStudio.Services.Icons.Default);
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 50% 70%;
+  position: absolute;
+  z-index: -1;   
+}
