@@ -7,8 +7,8 @@ const BORDER_STYLE = "0.5px solid #666";
 
 export default class GuestbookGrid extends Component {
     render() {
-        const cells = this.props.signatures.map(signature =>
-            <GuestbookGridCell borderStyle={BORDER_STYLE} signature={signature.signature} />);
+        const cells = this.props.signatures.map(({ signature = null }) =>
+            <GuestbookGridCell borderStyle={BORDER_STYLE} signature={signature} />);
 
         return <GridContainer>
             <Grid>{cells}</Grid>

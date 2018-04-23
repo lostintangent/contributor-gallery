@@ -1,5 +1,6 @@
 {
-    "excludedFiles": [
-        "src/mode/signatures.js"
+    "$schema": "http://json.schemastore.org/vsls",
+    "hideFiles": [
+        "signatures.js"
     ]
 }
