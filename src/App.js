@@ -6,7 +6,7 @@ import signatures from "./model/signatureMatrix";
 
 export default () => {
     return <div className="App">
-      <Header />
-      <GuestbookGrid signatures={signatures} />
+        <Header />
+        <GuestbookGrid signatures={signatures} />
     </div>;
 };
