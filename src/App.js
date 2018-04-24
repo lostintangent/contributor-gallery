@@ -2,10 +2,21 @@ import GuestbookGrid from "./components/GuestbookGrid";
 import Header from "./components/Header";
 import React from "react";
 
-import "./index.css";
-
 import signatures from "./model/signatureMatrix";
-import { ThemeProvider } from "styled-components";
+import styled, { injectGlobal, ThemeProvider } from "styled-components";
+
+injectGlobal`
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: sans-serif;
+    padding: 20px;
+  }
+`;
 
 const theme = {
   borderStyle: "0.5px solid #666",
@@ -16,9 +27,11 @@ const theme = {
 
 export default () => {
     return <ThemeProvider theme={theme}>
-      <div className="App">
+      <AppContainer>
         <Header />
         <GuestbookGrid signatures={signatures} />
-      </div>
+      </AppContainer>
     </ThemeProvider>;
 };
+
+const AppContainer = styled.div`width: 905px`;

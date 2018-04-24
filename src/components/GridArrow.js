@@ -14,7 +14,7 @@ export default () => {
 const ArrowContainer = styled.div`
     display: flex;    
     position: absolute;
-    right: -8%;
+    right: -10%;
     top: 40%;
 `;
 
