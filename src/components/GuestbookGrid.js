@@ -3,12 +3,10 @@ import GuestbookGridCell from "./GuestbookGridCell";
 import styled from "styled-components";
 import GridArrow from "./GridArrow";
 
-const BORDER_STYLE = "0.5px solid #666";
-
 export default class GuestbookGrid extends Component {
     render() {
         const cells = this.props.signatures.map(({ signature = null }) =>
-            <GuestbookGridCell borderStyle={BORDER_STYLE} signature={signature} />);
+            <GuestbookGridCell signature={signature} />);
 
         return <GridContainer>
             <Grid>{cells}</Grid>
@@ -20,8 +18,8 @@ export default class GuestbookGrid extends Component {
 const GridContainer = styled.div`position: relative`;
 
 const Grid = styled.div`
-    border-left: ${BORDER_STYLE};
-    border-top: ${BORDER_STYLE};
+    border-left: ${( { theme: { borderStyle } }) => borderStyle };
+    border-top: ${( { theme: { borderStyle } }) => borderStyle };
     display: flex;
     flex-wrap: wrap;
     width: 901px;
