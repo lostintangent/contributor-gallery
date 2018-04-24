@@ -24,7 +24,7 @@ const Grid = styled.div`
     border-top: ${BORDER_STYLE};
     display: flex;
     flex-wrap: wrap;
-    width: 915px;
+    width: 901px;
 
     &::before {
         position: absolute;

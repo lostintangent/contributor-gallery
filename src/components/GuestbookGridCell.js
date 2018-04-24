@@ -6,17 +6,11 @@ const CELL_WIDTH = 30;
 
 export default ({ borderStyle, signature }) => {
     const cellContent = signature ?
-        <FittedImage src={createImageUrl(signature.handle)} alt={signature.message} /> :
+        <FittedImage src={`http://avatars.io/twitter/${signature.handle}/small`} alt={signature.message} /> :
         null;
 
     return <div style={createStyle(borderStyle)}>{cellContent}</div>;
 }
-
-function createImageUrl(twitterHandle) {
-    return `https://twitter.com/${twitterHandle}/profile_image`;
-}
-
-const FittedImage = styled.img`max-width: 100%`;
 
 function createStyle(borderStyle) {
     return {
@@ -26,3 +20,5 @@ function createStyle(borderStyle) {
         width: CELL_WIDTH
     };
 }
+
+const FittedImage = styled.img`max-width: 100%; max-height: 100%; object-fit: cover`;

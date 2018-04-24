@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 20px;
@@ -14,7 +18,7 @@ h1 {
 }
 
 .App {
-  width: 920px;
+  width: 905px;
 }
 
 h2 {
