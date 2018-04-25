@@ -1,0 +1,21 @@
+import { injectGlobal } from "styled-components";
+
+injectGlobal`
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: sans-serif;
+    padding: 20px;
+  }
+`;
+
+export default {
+    borderStyle: "0.5px solid #666",
+    cellSize: "30px",
+    primaryColor: "plum",
+    secondaryColor: "#666"
+};

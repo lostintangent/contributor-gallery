@@ -1,4 +1,4 @@
-export default [
+export const signatures = [
     { handle: "satyanadella", location: "California, USA", message: "I love live share 2" },
     { handle: "scottgu", location: "California, USA", message: "I love live share 2" },
     { handle: "samjgeorge", location: "California, USA", message: "I love live share 2" },

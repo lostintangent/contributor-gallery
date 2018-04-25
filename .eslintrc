@@ -1,0 +1,14 @@
+{
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
+    "rules": {
+        "no-var": "error",
+        "react/prop-types": "off"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "modules": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    }
+}

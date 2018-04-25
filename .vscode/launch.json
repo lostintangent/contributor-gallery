@@ -3,11 +3,10 @@
     "configurations": [
         {
             "type": "chrome",
-            "request": "attach",
+            "request": "launch",
             "name": "Chrome",
-            "preLaunchTask": "start",
             "url": "http://localhost:3000",
-            "webRoot": "${workspaceFolder}"
+            "webRoot": "${workspaceFolder}/src"
         }
     ]
 }

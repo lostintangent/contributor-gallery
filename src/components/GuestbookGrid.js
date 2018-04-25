@@ -6,7 +6,7 @@ import GridArrow from "./GridArrow";
 export default class GuestbookGrid extends Component {
     render() {
         const cells = this.props.signatures.map(({ signature = null }) =>
-            <GuestbookGridCell signature={signature} />);
+            <GuestbookGridCell signature={signature} key="23" />);
 
         return <GridContainer>
             <Grid>{cells}</Grid>
@@ -26,13 +26,10 @@ const Grid = styled.div`
 
     &::before {
         position: absolute;
-        background-repeat: no-repeat;
-        background-image: url(https://ms-vsliveshare.gallerycdn.vsassets.io/extensions/ms-vsliveshare/vsliveshare/0.2.399/1524081584622/Microsoft.VisualStudio.Services.Icons.Default);
-        background-size: 50% 70%;
-        background-position: 50% 50%;
+        background: no-repeat center/50% url(https://ms-vsliveshare.gallerycdn.vsassets.io/extensions/ms-vsliveshare/vsliveshare/0.2.399/1524081584622/Microsoft.VisualStudio.Services.Icons.Default);
+        content: "";
         opacity: 0.3;
         width: 100%; 
         height: 100%; 
-        content: "";
     }
 `;
