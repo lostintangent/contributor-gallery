@@ -1,7 +1,8 @@
-import React, { Component } from "react";
-import GuestbookGridCell from "./GuestbookGridCell";
-import styled from "styled-components";
 import GridArrow from "./GridArrow";
+import GuestbookGridCell from "./GuestbookGridCell";
+import React, { Component } from "react";
+
+import styled from "styled-components";
 
 export default class GuestbookGrid extends Component {
     render() {
