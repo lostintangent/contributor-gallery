@@ -1,13 +1,12 @@
 import GridArrow from "./GridArrow";
 import GuestbookGridCell from "./GuestbookGridCell";
 import React, { Component } from "react";
-
 import styled from "styled-components";
 
 export default class GuestbookGrid extends Component {
     render() {
-        const cells = this.props.signatures.map(({ key, signature = null }) =>
-            <GuestbookGridCell signature={signature} key={key} />);
+        const cells = this.props.signatures.map(({ signature }) =>
+            <GuestbookGridCell signature={signature} key={signature} />);
 
         return <GridContainer>
             <Grid>{cells}</Grid>
@@ -17,8 +16,8 @@ export default class GuestbookGrid extends Component {
 }
 
 const Grid = styled.div`
-    border-left: ${( { theme: { borderStyle } }) => borderStyle };
-    border-top: ${( { theme: { borderStyle } }) => borderStyle };
+    border-left: ${({ theme: { borderStyle }}) => borderStyle };
+    border-top: ${({ theme: { borderStyle }}) => borderStyle };
     display: flex;
     flex-wrap: wrap;
     width: 901px;
