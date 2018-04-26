@@ -5,8 +5,8 @@ import GridArrow from "./GridArrow";
 
 export default class GuestbookGrid extends Component {
     render() {
-        const cells = this.props.signatures.map(({ signature = null }) =>
-            <GuestbookGridCell signature={signature} key="23" />);
+        const cells = this.props.signatures.map(({ key, signature = null }) =>
+            <GuestbookGridCell signature={signature} key={key} />);
 
         return <GridContainer>
             <Grid>{cells}</Grid>
@@ -14,8 +14,6 @@ export default class GuestbookGrid extends Component {
         </GridContainer>;
     }
 }
-
-const GridContainer = styled.div`position: relative`;
 
 const Grid = styled.div`
     border-left: ${( { theme: { borderStyle } }) => borderStyle };
@@ -33,3 +31,5 @@ const Grid = styled.div`
         height: 100%; 
     }
 `;
+
+const GridContainer = styled.div`position: relative`;
