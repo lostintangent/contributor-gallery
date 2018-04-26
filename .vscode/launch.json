@@ -6,7 +6,8 @@
             "request": "launch",
             "name": "Chrome",
             "url": "http://localhost:3000",
-            "webRoot": "${workspaceFolder}/src"
+            "webRoot": "${workspaceFolder}/src",
+            "sourceMaps": true
         }
     ]
 }

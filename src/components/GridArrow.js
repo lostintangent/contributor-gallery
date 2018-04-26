@@ -4,12 +4,12 @@ import styled from "styled-components";
 
 import arrowImageUrl from "./arrow.png";
 
-export default () => {
+export default function GridArrow() {
     return <ArrowContainer>
         <ArrowImage src={arrowImageUrl} />
         <ArrowLabel>Your Picture Here <Emoji type="camera" /></ArrowLabel>
     </ArrowContainer>;
-};
+}
 
 const ArrowContainer = styled.div`
     display: flex;    
