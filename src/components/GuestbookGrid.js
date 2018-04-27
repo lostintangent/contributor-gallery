@@ -2,7 +2,9 @@ import GridArrow from "./GridArrow";
 import GuestbookGridCell from "./GuestbookGridCell";
 import React, { Component } from "react";
 import styled from "styled-components";
-
+  
+import logoImageUrl from "./logo.svg";
+ 
 export default class GuestbookGrid extends Component {
     render() {
         const cells = this.props.signatures.map(({ signature }) =>
@@ -24,7 +26,7 @@ const Grid = styled.div`
 
     &::before {
         position: absolute;
-        background: no-repeat center/50% url(https://ms-vsliveshare.gallerycdn.vsassets.io/extensions/ms-vsliveshare/vsliveshare/0.2.399/1524081584622/Microsoft.VisualStudio.Services.Icons.Default);
+        background: no-repeat center/50% url(${logoImageUrl});
         content: "";
         opacity: 0.3;
         width: 100%; 
