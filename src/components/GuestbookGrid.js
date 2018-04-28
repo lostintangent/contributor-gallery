@@ -7,7 +7,7 @@ import logoImageUrl from "./logo.svg";
  
 export default class GuestbookGrid extends Component {
     render() {
-        const cells = this.props.signatures.map(({ signature }) =>
+        var cells = this.props.signatures.map(({ signature }) =>
             <GuestbookGridCell signature={signature} key={signature} />);
 
         return <GridContainer>
