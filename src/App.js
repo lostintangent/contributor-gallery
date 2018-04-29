@@ -17,4 +17,6 @@ export default function App() {
     );
 }
 
-const AppContainer = styled.div`width: 905px`;
+const AppContainer = styled.div`
+    width: 905px;
+`;

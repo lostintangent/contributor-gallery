@@ -5,7 +5,7 @@ import TwitterButton from "./TwitterButton";
 
 import styled from "styled-components";
 
-export default () => {
+export default function Header() {
     return <Container>
     <div>
             <Heading>Visual Studio Live Share Guestbook</Heading>
@@ -13,7 +13,7 @@ export default () => {
 </div>
         <TwitterButton hashTag="vsliveshare" />
     </Container>;
-};
+}
 
 const Container = styled.div`
     display: flex;

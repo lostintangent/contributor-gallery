@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export default ({ borderStyle, signature }) => {
+export default function GuestbookGridCell({ signature }) {
     const cellContent = signature ?
         <FittedImage src={`http://avatars.io/twitter/${signature.handle}/small`} alt={signature.message} /> :
         null;
@@ -16,4 +16,6 @@ const Cell = styled.div`
     width: ${({ theme: { cellSize }}) => cellSize };
 `;
 
-const FittedImage = styled.img`max-width: 100%;`;
+const FittedImage = styled.img`
+    max-width: 100%;
+`;

@@ -5,6 +5,6 @@ const EMOJIS = {
     "rocket": "🚀"
 }
 
-export default ({ type }) => {
+export default function Emoji({ type }) {
     return <span role="img" aria-label={type}>{EMOJIS[type]}</span>;
 }
