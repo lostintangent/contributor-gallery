@@ -6,7 +6,7 @@ const ROWS = 20;
 const matrix = [];
 for (let x = 0; x < COLUMNS; x++) {
   for (let y = 0; y < ROWS; y++) {
-    const signature = signatures.shift();
+    const signature = signatures.unshift();
     matrix.push({ signature })
   }
 }
