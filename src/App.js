@@ -1,5 +1,5 @@
-import GuestbookGrid from "./components/GuestbookGrid";
-import GuestbookMap from "./components/GuestbookMap";
+import GuestbookGrid from "./components/Grid/GuestbookGrid";
+import GuestbookMap from "./components/Map/GuestbookMap";
 import Header from "./components/Header";
 import React from "react";
 

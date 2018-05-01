@@ -1,4 +1,4 @@
-import Emoji from "./Emoji";
+import Emoji from "../Emoji";
 import React from "react";
 import styled from "styled-components";
 
