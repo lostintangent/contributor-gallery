@@ -1,10 +1,10 @@
-import GuestbookGrid from "./components/Grid/GuestbookGrid";
-import GuestbookMap from "./components/Map/GuestbookMap";
-import Header from "./components/Header";
+import GuestbookGrid from "./Grid/GuestbookGrid";
+import GuestbookMap from "./Map/GuestbookMap";
+import Header from "./Header";
 import React from "react";
 
-import pins from "./model/pins";
-import signatures from "./model/signatureMatrix";
+import pins from "../model/pins";
+import signatures from "../model/signatureMatrix";
 import styled, { ThemeProvider } from "styled-components";
 import theme from "./theme";
 
