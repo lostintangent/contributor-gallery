@@ -1,23 +1,21 @@
 import GridArrow from "./GridArrow";
 import GuestbookGridCell from "./GuestbookGridCell";
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import logoImageUrl from "./logo.svg";
 
-export default class GuestbookGrid extends Component {
-  render() {
-    var cells = this.props.signatures.map(({ signature }) => (
-      <GuestbookGridCell signature={signature} key={signature} />
-    ));
+export default function GuestbookGrid({ signatures }) {
+  var cells = signatures.map(({ signature }) => (
+    <GuestbookGridCell signature={signature} key={signature} />
+  ));
 
-    return (
-      <GridContainer>
-        <Grid>{cells}</Grid>
-        <GridArrow />
-      </GridContainer>
-    );
-  }
+  return (
+    <GridContainer>
+      <Grid>{cells}</Grid>
+      <GridArrow />
+    </GridContainer>
+  );
 }
 
 const Grid = styled.div`
@@ -28,12 +26,12 @@ const Grid = styled.div`
   width: 901px;
 
   &::before {
-    position: absolute;
     background: no-repeat center/50% url(${logoImageUrl});
     content: "";
-    opacity: 0.3;
-    width: 100%;
     height: 100%;
+    opacity: 0.3;
+    position: absolute;
+    width: 100%;
   }
 `;
 

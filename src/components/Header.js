@@ -6,13 +6,15 @@ import TwitterButton from "./TwitterButton";
 import styled from "styled-components";
 
 export default function Header() {
-    return <Container>
-    <div>
-            <Heading>Visual Studio Live Share Guestbook</Heading>
-            <Subheading>Be a part of collaborative development history at //Build 2018! <Emoji type="rocket" /></Subheading>
-</div>
-        <TwitterButton hashTag="vsliveshare" />
-    </Container>;
+    return (
+        <Container>
+            <div>
+                <Heading>Visual Studio Live Share Guestbook</Heading>
+                <Subheading>Be a part of collaborative development history at //Build 2018! <Emoji type="rocket" /></Subheading>
+            </div>
+            <TwitterButton hashTag="vsliveshare" />
+        </Container>
+    );
 }
 
 const Container = styled.div`
@@ -23,7 +25,6 @@ const Container = styled.div`
 const Heading = styled.h1`
     color: ${({ theme }) => theme.primaryColor};
     font-size: 2em;
-    margin: 0 0 0.2em 0;
-    padding: 0;
+    margin-bottom: 0.2em;
     text-align: left;
 `;
