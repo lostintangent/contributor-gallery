@@ -2,12 +2,10 @@ import Emoji from "../Emoji";
 import React from "react";
 import styled from "styled-components";
 
-import arrowImageUrl from "./arrow.png";
 
 export default function GridArrow() {
     return (
         <ArrowContainer>
-            <ArrowImage src={arrowImageUrl} />
             <ArrowLabel>Your Picture Here <Emoji type="camera" /></ArrowLabel>
         </ArrowContainer>
     );
@@ -16,20 +14,22 @@ export default function GridArrow() {
 const ArrowContainer = styled.div`
     display: flex;    
     position: absolute;
-    right: -10%;
-    top: 40%;
+    right: -6%;
+    top: 30%;
 `;
 
+/*
+import arrowImageUrl from "./arrow.png";
 const ArrowImage = styled.img`
-    height: 150px;
+  //  height: 150px;
     opacity: 0.7;
     margin-right: 0.8em;
     width: 150px;
-`;
+`;*/
 
 const ArrowLabel = styled.span`
     color: plum;
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: bold;
     writing-mode: vertical-lr;
 `;
