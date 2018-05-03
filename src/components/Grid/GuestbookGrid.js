@@ -15,8 +15,8 @@ export default function GuestbookGrid({ signatures }) {
   );
 }
 
-
-
+/*global require*/
+const styled = require("styled-components");
 const Grid = styled.div`
   border-left: ${({ theme: { borderStyle } }) => borderStyle};
   border-top: ${({ theme: { borderStyle } }) => borderStyle};
@@ -25,7 +25,7 @@ const Grid = styled.div`
   width: 901px;
 
   &::before {
-    background: no-repeat center/50% url(${logoImageUrl});
+    background: no-repeat center/50% url();
     content: "";
     height: 100%;
     opacity: 0.3;
