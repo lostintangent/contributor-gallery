@@ -2,9 +2,6 @@ import GridArrow from "./GridArrow";
 import GuestbookGridCell from "./GuestbookGridCell";
 import React from "react";
 
-import logoImageUrl from "./logo.svg";
-import styled from "styled-components";
-
 export default function GuestbookGrid({ signatures }) {
   const cells = signatures.map(({ signature }) => (
     <GuestbookGridCell signature={signature} key={signature} />
@@ -17,6 +14,8 @@ export default function GuestbookGrid({ signatures }) {
     </GridContainer>
   );
 }
+
+
 
 const Grid = styled.div`
   border-left: ${({ theme: { borderStyle } }) => borderStyle};
