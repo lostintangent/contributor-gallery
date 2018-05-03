@@ -2,8 +2,11 @@ import GridArrow from "./GridArrow";
 import GuestbookGridCell from "./GuestbookGridCell";
 import React from "react";
 
+import logoImageUrl from "./logo.svg";
+import styled from "styled-components";
+
 export default function GuestbookGrid({ signatures }) {
-  const cells = signatures.map(({ signature }) => (
+  var cells = signatures.map(({ signature }) => (
     <GuestbookGridCell signature={signature} key={signature} />
   ));
 
@@ -15,8 +18,6 @@ export default function GuestbookGrid({ signatures }) {
   );
 }
 
-/*global require*/
-const styled = require("styled-components");
 const Grid = styled.div`
   border-left: ${({ theme: { borderStyle } }) => borderStyle};
   border-top: ${({ theme: { borderStyle } }) => borderStyle};
@@ -25,7 +26,7 @@ const Grid = styled.div`
   width: 901px;
 
   &::before {
-    background: no-repeat center/50% url();
+    background: no-repeat center/50% url(${logoImageUrl});
     content: "";
     height: 100%;
     opacity: 0.3;
