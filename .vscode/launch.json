@@ -7,7 +7,10 @@
             "name": "Chrome (Launch)",
             "url": "http://localhost:3000",
             "webRoot": "${workspaceFolder}",
-            "sourceMaps": true
+            "sourceMaps": true,
+            "skipFiles": [
+                "<node_internals>/**/*.js"
+            ]
         },
         {
             "type": "chrome",
@@ -15,7 +18,10 @@
             "name": "Chrome (Attach)",
             "port": 9222,
             "webRoot": "${workspaceFolder}",
-            "sourceMaps": true
+            "sourceMaps": true,
+            "skipFiles": [
+                "<node_internals>/**/*.js"
+            ]
         }
     ]
 }
