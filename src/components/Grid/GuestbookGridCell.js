@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function GuestbookGridCell({ signature }) {
+export default function GuestbookGridCell({ active = false, signature }) {
     const cellContent = signature ?
         <FittedImage src={`http://avatars.io/twitter/${signature.handle}/small`} alt={signature.message} /> :
         null;
