@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export default function GuestbookGridCell({ active = false, signature }) {
     const cellContent = signature ?
-        <FittedImage src={`http://avatars.io/twitter/${signature.handle}/small`} alt={signature.message} /> :
+        <FittedImage active={active} src={`http://avatars.io/twitter/${signature.handle}/medium`} alt={signature.message} /> :
         null;
 
     return <Cell>{cellContent}</Cell>;
@@ -17,5 +17,11 @@ const Cell = styled.div`
 `;
 
 const FittedImage = styled.img`
+    border: ${({ active }) => active ? 5 : 0}px solid ${({ theme: { primaryColor } }) => primaryColor};
+    box-sizing: content-box;
     max-width: 100%;
+    position: relative;
+    transform: scale(${({ active }) => active ? 3 : 1});
+    transition: transform 2s;
+    z-index: ${({ active }) => active ? 10 : 1};
 `;
