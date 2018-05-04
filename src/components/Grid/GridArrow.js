@@ -28,7 +28,7 @@ const ArrowImage = styled.img`
 `;*/
 
 const ArrowLabel = styled.span`
-    color: plum;
+    color: ${({ theme: { primaryColor } }) => primaryColor};
     font-size: 1.5em;
     font-weight: bold;
     writing-mode: vertical-lr;

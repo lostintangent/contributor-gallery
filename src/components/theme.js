@@ -16,6 +16,6 @@ injectGlobal`
 export default {
     borderStyle: "0.5px solid #666",
     cellSize: "30px",
-    primaryColor: "plum",
+    primaryColor: "#9082CD",
     secondaryColor: "#666"
 };
