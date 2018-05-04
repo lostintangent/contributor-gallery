@@ -3,6 +3,7 @@ import GuestbookGridCell from "./GuestbookGridCell";
 import React, { Component } from "react";
 
 import logoImageUrl from "./logo.svg";
+import signatures from "../../model/signatureMatrix";
 import styled from "styled-components";
 
 /**
@@ -13,14 +14,14 @@ export default class GuestbookGrid extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      signatures: props.signatures
+      signatures: signatures
     }
   }
 
   componentDidMount() {
     // Determine whether we have any actual signatures
     // before we attempt to start the "active" carousel
-    var activeSignatures = this.state.signatures.filter(({ signature }) => typeof signature === "object");
+    const activeSignatures = this.state.signatures.filter(({ signature }) => typeof signature === "object");
     if (activeSignatures.length === 0) {
       return;
     }

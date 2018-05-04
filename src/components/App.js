@@ -4,7 +4,6 @@ import Header from "./Header";
 import React from "react";
 
 import pins from "../model/pins";
-import signatures from "../model/signatureMatrix";
 import styled, { ThemeProvider } from "styled-components";
 import theme from "./theme";
 
@@ -13,7 +12,7 @@ export default function App() {
         <ThemeProvider theme={theme}>
             <AppContainer>
                 <Header />
-                <GuestbookGrid signatures={signatures} />
+                <GuestbookGrid />
                 <GuestbookMap pins={pins} />
             </AppContainer>
         </ThemeProvider>
