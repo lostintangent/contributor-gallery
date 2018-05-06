@@ -1,5 +1,10 @@
-const bonusCells = [18, 131, 274, 412, 518];
+const bonusCells = [18, 87, 131, 274, 412, 518];
+const specialCells = [4, 337];
 
-export const isBonusCell = (cellNumber) => {
+export function isBonusCell(cellNumber) {
     return bonusCells.includes(cellNumber);
-};
+}
+
+export function isSpecialCell(cellNumber) {
+    return specialCells.includes(cellNumber);
+}

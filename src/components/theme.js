@@ -14,8 +14,10 @@ injectGlobal`
 `;
 
 export default {
+    bonusColor: "#666",
     borderStyle: "0.5px solid #666",
     cellSize: "30px",
     primaryColor: "#9082CD",
-    secondaryColor: "#666"
+    secondaryColor: "#666",
+    specialColor: "gold"
 };

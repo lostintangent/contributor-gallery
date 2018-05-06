@@ -46,8 +46,8 @@ export default class GuestbookGrid extends Component {
   }
 
   render() {
-    const cells = this.state.signatures.map(({ isActive, isBonus, signature }, index) => (
-      <GuestbookGridCell isActive={isActive} isBonus={isBonus} signature={signature} key={index} />
+    const cells = this.state.signatures.map((signature, index) => (
+      <GuestbookGridCell key={index} {...signature} />
     ));
 
     return (
