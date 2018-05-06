@@ -27,7 +27,7 @@ export default class GuestbookGrid extends Component {
     }
 
     this.updateActiveSignature(activeSignatures);
-    setInterval(this.updateActiveSignature.bind(this, activeSignatures), 1000);
+    setInterval(this.updateActiveSignature.bind(this, activeSignatures), 2000);
   }
 
   /**
