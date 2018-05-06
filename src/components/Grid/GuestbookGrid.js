@@ -37,17 +37,17 @@ export default class GuestbookGrid extends Component {
    * @param {Array} activeSignatures - An array of active signatures
    */
   updateActiveSignature(activeSignatures) {
-    activeSignatures.forEach(signature => delete signature.active);
+    activeSignatures.forEach(signature => delete signature.isActive);
 
     const activeSignature = Math.floor(Math.random() * activeSignatures.length);
-    activeSignatures[activeSignature].active = true;
+    activeSignatures[activeSignature].isActive = true;
 
     this.setState({ signatures: this.state.signatures });
   }
 
   render() {
-    const cells = this.state.signatures.map(({ active, signature }, index) => (
-      <GuestbookGridCell active={active} signature={signature} key={index} />
+    const cells = this.state.signatures.map(({ isActive, isBonus, signature }, index) => (
+      <GuestbookGridCell isActive={isActive} isBonus={isBonus} signature={signature} key={index} />
     ));
 
     return (

@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function GuestbookGridCell({ active = false, signature }) {
+export default function GuestbookGridCell({ isActive = false, isBonus = false, signature }) {
     const cellContent = signature ?
-        <FittedImage active={active} src={`http://avatars.io/${signature.handle ? "twitter/" + signature.handle +
+        <FittedImage isActive={isActive} isBonus={isBonus} src={`http://avatars.io/${signature.handle ? "twitter/" + signature.handle +
          "/medium" : "" }`} alt={signature.message} /> :
         null;
 
@@ -18,11 +18,12 @@ const Cell = styled.div`
 `;
 
 const FittedImage = styled.img`
-    border: ${({ active }) => active ? 5 : 0}px solid ${({ theme: { primaryColor } }) => primaryColor};
+    border: ${({ isActive }) => isActive ? 5 : 0}px solid ${({ theme: { primaryColor } }) => primaryColor};
     box-sizing: content-box;
     max-width: 100%;
+    outline: ${({ isBonus }) => isBonus ? 5 : 0}px solid gold;
     position: relative;
-    transform: scale(${({ active }) => active ? 3 : 1});
-    transition: transform 2s;
-    z-index: ${({ active }) => active ? 10 : 1};
+    transform: scale(${({ isActive }) => isActive ? 3 : 1});
+    transition: transform 2s ease;
+    z-index: ${({ isActive, isBonus }) => isActive ? 10 : isBonus?  5 : 1};
 `;

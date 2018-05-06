@@ -8,6 +8,7 @@
             "url": "http://localhost:3000",
             "webRoot": "${workspaceFolder}",
             "sourceMaps": true,
+            "smartStep": true,
             "skipFiles": [
                 "<node_internals>/**/*.js"
             ],
