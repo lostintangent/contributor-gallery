@@ -21,7 +21,7 @@ const FittedImage = styled.img`
     border: ${({ isActive }) => isActive ? 5 : 0}px solid ${({ theme: { primaryColor } }) => primaryColor};
     box-sizing: content-box;
     max-width: 100%;
-    outline: ${({ isBonus }) => isBonus ? 5 : 0}px solid gold;
+    outline: ${({ alt, isBonus }) => alt && isBonus ? 5 : 0}px solid gold;
     position: relative;
     transform: scale(${({ isActive }) => isActive ? 3 : 1});
     transition: transform 2s ease;

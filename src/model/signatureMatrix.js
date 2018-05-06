@@ -9,8 +9,8 @@ for (let x = 0; x < COLUMNS; x++) {
   for (let y = 0; y < ROWS; y++) {
     const cellNumber = y + (x * ROWS) + 1;
     const isBonus = isBonusCell(cellNumber);
-    const signature = signatures.shift();
 
+    const signature = signatures.unshift();
     matrix.push({ isBonus, signature });
   }
 }
