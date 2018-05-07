@@ -14,7 +14,7 @@ injectGlobal`
 `;
 
 export default {
-    bonusColor: "#666",
+    bonusColor: "orange",
     borderStyle: "0.5px solid #666",
     cellSize: "30px",
     primaryColor: "#9082CD",

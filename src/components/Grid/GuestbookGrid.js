@@ -1,4 +1,5 @@
 import GridArrow from "./GridArrow";
+import GridLegend from "./GridLegend";
 import GuestbookGridCell from "./GuestbookGridCell";
 import React, { Component } from "react";
 
@@ -52,6 +53,7 @@ export default class GuestbookGrid extends Component {
 
     return (
       <GridContainer>
+        <GridLegend />
         <Grid>{cells}</Grid>
         <GridArrow />
       </GridContainer>

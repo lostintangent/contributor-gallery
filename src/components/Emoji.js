@@ -2,7 +2,9 @@ import React from "react";
 
 const EMOJIS = {
     "camera": "📷",
-    "rocket": "🚀"
+    "hat": "🎩",
+    "rocket": "🚀",
+    "shirt": "👕"
 }
 
 export default function Emoji({ type }) {
