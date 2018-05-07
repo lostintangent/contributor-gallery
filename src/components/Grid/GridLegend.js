@@ -35,6 +35,7 @@ const SpecialSquare = ColorSquare.extend`
 `;
 
 const LegendItem = styled.div`
+    align-items: center;
     display: flex;
     font-size: 0.8em;
     margin-left: 10px;
