@@ -1,0 +1,6 @@
+tasks:
+  - command: "npm install && npm start"
+  
+ports:
+  - port: 3000
+    protocol: "http"
