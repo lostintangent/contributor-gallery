@@ -4,7 +4,7 @@ const specialCells = [37, 337];
 /**
  * Determine whether a specific matrix cell represents a bonus cell.
  * 
- * @param {int} cellNumber The index of the cell within the signatures matrix to check.
+ * @param {number} cellNumber The index of the cell within the signatures matrix to check.
  * @returns {boolean} A boolean indicating whether the specified cell is a bonus cell or not.
  */
 export function isBonusCell(cellNumber) {
@@ -14,7 +14,7 @@ export function isBonusCell(cellNumber) {
 /**
  * Determine whether a specific matrix cell represents a special cell.
  * 
- * @param {int} cellNumber The index of the cell within the signatures matrix to check.
+ * @param {number} cellNumber The index of the cell within the signatures matrix to check.
  * @returns {boolean} A boolean indicating whether the specified cell is a special cell or not.
  */
 export function isSpecialCell(cellNumber) {
