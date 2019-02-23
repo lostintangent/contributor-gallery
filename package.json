@@ -1,6 +1,6 @@
 {
   "name": "guestbook",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "mobx": "^5.6.0",
@@ -17,8 +17,5 @@
   },
   "devDependencies": {
     "eslint-plugin-react": "^7.7.0"
-  },
-  "extensionDependencies": [
-    "ms-vsliveshare.vsliveshare"
-  ]
+  }
 }
