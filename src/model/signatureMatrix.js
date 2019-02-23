@@ -4,14 +4,6 @@ import { signatures } from "./signatures";
 const COLUMNS = 30;
 const ROWS = 20;
 
-class MatrixCell {
-  constructor(isBonus, isSpecial, signature) {
-    this.isBonus = isBonus;
-    this.isSpecial = isSpecial;
-    this.signature = signature;
-  }
-}
-
 const matrix = [];
 for (let x = 0; x < COLUMNS; x++) {
   for (let y = 0; y < ROWS; y++) {
@@ -19,7 +11,7 @@ for (let x = 0; x < COLUMNS; x++) {
     const isBonus = isBonusCell(cellNumber);
     const isSpecial = isSpecialCell(cellNumber);
 
-    const signature = signatures.unshift();
+    const signature = signatures.shift();
     matrix.push({ isBonus, isSpecial, signature });
   }
 }

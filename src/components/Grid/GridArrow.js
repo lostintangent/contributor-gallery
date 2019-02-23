@@ -2,20 +2,21 @@ import Emoji from "../Emoji";
 import React from "react";
 import styled from "styled-components";
 
-
 export default function GridArrow() {
-    return (
-        <ArrowContainer>
-            <ArrowLabel>Your Picture Here <Emoji type="camera" /></ArrowLabel>
-        </ArrowContainer>
-    );
+  return (
+    <ArrowContainer>
+      <ArrowLabel>
+        Your Picture Here <Emoji type="camera" />
+      </ArrowLabel>
+    </ArrowContainer>
+  );
 }
 
 const ArrowContainer = styled.div`
-    display: flex;    
-    position: absolute;
-    right: -6%;
-    top: 30%;
+  display: flex;
+  position: absolute;
+  right: -6%;
+  top: 30%;
 `;
 
 /*
@@ -28,8 +29,8 @@ const ArrowImage = styled.img`
 `;*/
 
 const ArrowLabel = styled.span`
-    color: ${({ theme: { primaryColor } }) => primaryColor};
-    font-size: 1.5em;
-    font-weight: bold;
-    writing-mode: vertical-lr;
+  color: ${({ theme: { primaryColor } }) => primaryColor};
+  font-size: 1.5em;
+  font-weight: bold;
+  writing-mode: vertical-lr;
 `;
