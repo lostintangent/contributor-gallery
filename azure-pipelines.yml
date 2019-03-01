@@ -1,17 +1,13 @@
-pool:
-  vmImage: 'ubuntu-16.04'
-strategy:
-  matrix:
-    node_8_x:
-      node_version: 8.x
-    node_9_x:
-      node_version: 9.x
+queue:
+  name: Hosted VS2017
 
 steps:
 - task: NodeTool@0 
   inputs:
-    versionSpec: $(node_version)
+    versionSpec: '8.x'
 
 - script: npm install
+  displayName: Install dependencies
 
 - script: npm test
+  displayName: Run tests
