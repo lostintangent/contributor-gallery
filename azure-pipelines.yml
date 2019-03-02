@@ -6,8 +6,8 @@ steps:
   inputs:
     versionSpec: '8.x'
 
-- script: npm install
+- script: yarn
   displayName: Install dependencies
 
-- script: npm test
+- script: yarn test
   displayName: Run tests
