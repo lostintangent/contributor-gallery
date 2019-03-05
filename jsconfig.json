@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "target": "ES6",
-    "module": "commonjs"
+    "module": "commonjs",
+    "outDir": "out",
+    "rootDir": "src"
   },
   "include": [
     "src/**/*.js"
