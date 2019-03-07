@@ -26,5 +26,5 @@ steps:
     vsckEndpoint: 'vscloudkernel-dev'
     nugetpat: 'vscloudkernel-nuget'
     language: javascript
-    githubpat: arjun27
+    githubpat: 'vsls-contrib'
     nugetVersion: '0.1.806-alpha-g2adb5dd333'
