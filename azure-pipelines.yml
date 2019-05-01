@@ -17,5 +17,5 @@ steps:
     serviceConnection: 'rich-code-nav'
     nugetServiceConnection: 'rich-code-nav-nuget'
     githubServiceConnection: 'vsls-contrib'
-    languages: typescript
+    languages: javascript
     serviceEndpoint: 'https://prod.richnav.vsengsaas.visualstudio.com'
