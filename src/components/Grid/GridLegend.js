@@ -3,7 +3,7 @@ import React from "react";
 
 import styled from "styled-components";
 
-function GridLegend() {
+function GridLegend({ bonusCells = "Bonus" }) {
     return (
         <Container>
             <LegendItem><BonusSquare /> = Bonus Cell (<Emoji type="shirt" />)</LegendItem>
