@@ -42,4 +42,5 @@ const LegendItem = styled.div`
     vertical-align: middle;
 `;
 
-export default GridLegend; // To check: Where is GridLegend used?
+// To check: Where is GridLegend used?
+export default GridLegend;
