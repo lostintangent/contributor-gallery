@@ -16,6 +16,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "@types/react": "^16.8.15",
     "cross-env": "^5.2.0",
     "eslint-plugin-react": "^7.7.0"
   }

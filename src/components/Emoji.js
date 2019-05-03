@@ -10,7 +10,7 @@ const EMOJIS = {
 /**
  * Component for rendering accessible emojis.
  * 
- * @param {string} type The name of the emoji to display.
+ * @param {object} Object with string value `type`, which is the name of the emoji to display.
  */
 export default function Emoji({ type }) {
     return <span role="img" aria-label={type}>{EMOJIS[type]}</span>;
