@@ -1,5 +1,6 @@
 import { isBonusCell, isSpecialCell } from "./bonusCells";
 import { signatures } from "./signatures";
+import { observable } from "mobx";
 
 const COLUMNS = 30;
 const ROWS = 20;
@@ -24,4 +25,4 @@ for (let x = 0; x < COLUMNS; x++) {
   }
 }
 
-export default matrix;
+export default observable(matrix);
