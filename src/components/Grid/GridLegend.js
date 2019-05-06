@@ -3,7 +3,7 @@ import React from "react";
 
 import styled from "styled-components";
 
-function GridLegend({ bonusCells = "Bonus" }) {
+export function GridLegend({ bonusCells = "Bonus" }) {
     return (
         <Container>
             <LegendItem><BonusSquare /> = Bonus Cell (<Emoji type="shirt" />)</LegendItem>
@@ -41,5 +41,3 @@ const LegendItem = styled.div`
     margin-left: 10px;
     vertical-align: middle;
 `;
-
-export default GridLegend;
