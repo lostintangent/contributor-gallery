@@ -2,7 +2,7 @@ import Emoji from "./Emoji";
 import React from "react";
 
 // To check: peek definition on Subheading to find the font-size
-import Subheading from "./Subheading";
+import { Subheading } from "./Subheading";
 
 import TwitterButton from "./TwitterButton";
 
