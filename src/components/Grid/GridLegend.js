@@ -42,4 +42,3 @@ const LegendItem = styled.div`
     margin-left: 10px;
     vertical-align: middle;
 `;
-
