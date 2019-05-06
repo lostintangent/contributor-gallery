@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default styled.h2`
+export const Subheading = styled.h2`
     color: ${({ theme }) => theme.secondaryColor};
     font-size: 1em;
     font-weight: bold;

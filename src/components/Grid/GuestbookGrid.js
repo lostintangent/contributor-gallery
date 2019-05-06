@@ -1,5 +1,5 @@
 import GridArrow from "./GridArrow";
-import GridLegend from "./GridLegend";
+import { GridLegend } from "./GridLegend";
 import GuestbookGridCell from "./GuestbookGridCell";
 import React, { Component } from "react";
 
