@@ -1,8 +1,10 @@
 import Emoji from "./Emoji";
 import React from "react";
-import { Subheading } from "./Subheading";
-import TwitterButton from "./TwitterButton";
 
+// To check: go to definition on Subheading to find the font-size
+import { Subheading } from "./Subheading";
+
+import TwitterButton from "./TwitterButton";
 import styled from "styled-components";
 
 export default function Header() {
