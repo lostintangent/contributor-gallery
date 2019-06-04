@@ -19,7 +19,6 @@ for (let x = 0; x < COLUMNS; x++) {
     const cellNumber = y + (x * ROWS) + 1;
     const isBonus = isBonusCell(cellNumber);
     const isSpecial = isSpecialCell(cellNumber);
-
     const signature = signatures.shift();
     const cell = new MatrixCell(isBonus, isSpecial, signature)
     matrix.push(cell);
