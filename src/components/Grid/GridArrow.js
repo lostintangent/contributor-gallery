@@ -11,8 +11,7 @@ export default function GridArrow() {
     );
 }
 
-const ArrowContainer = styled.div`
-    display: flex;    
+const ArrowContainer = styled.div`   
     position: absolute;
     right: -6%;
     top: 30%;
