@@ -15,6 +15,9 @@ for (let x = 0; x < COLUMNS; x++) {
     const isSpecial = isSpecialCell(cellNumber);
 
     const signature = signatures.shift();
+    if (signature) {
+      signature.handle = '';
+    }
     matrix.push({ isBonus, isSpecial, signature });
   }
 }
