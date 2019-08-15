@@ -6,7 +6,7 @@ import styled from "styled-components";
 export default function GridArrow() {
     return (
         <ArrowContainer>
-            <ArrowLabel>Your Picture Here <Emoji type="camera" /></ArrowLabel>
+            <ArrowLabel>Your Picture Should be here <Emoji type="camera" /></ArrowLabel>
         </ArrowContainer>
     );
 }
