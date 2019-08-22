@@ -2,6 +2,7 @@ import { isBonusCell, isSpecialCell } from "./bonusCells";
 import { signatures } from "./signatures";
 import { observable } from "mobx";
 
+
 const COLUMNS = 30;
 const ROWS = 20;
 
