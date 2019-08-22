@@ -12,7 +12,7 @@ export default function Header() {
         <Container>
             <div>
                 <Heading>Visual Studio Live Share Guestbook</Heading>
-                <Subheading>Be a part of collaborative development history at //Build 2018! <Emoji type="rocket" /></Subheading>
+                <Subheading>Be a part of collaborative development history at //Discover Day 2019 <Emoji type="rocket" /></Subheading>
             </div>
             <TwitterButton hashTag="vsliveshare" />
         </Container>

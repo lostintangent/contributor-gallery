@@ -6,13 +6,12 @@ import styled from "styled-components";
 export default function GridArrow() {
     return (
         <ArrowContainer>
-            <ArrowLabel>Your Picture Here <Emoji type="camera" /></ArrowLabel>
+            <ArrowLabel>Your Picture Should be here <Emoji type="camera" /></ArrowLabel>
         </ArrowContainer>
     );
 }
 
-const ArrowContainer = styled.div`
-    display: flex;    
+const ArrowContainer = styled.div`   
     position: absolute;
     right: -6%;
     top: 30%;
