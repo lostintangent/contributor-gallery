@@ -10,7 +10,16 @@ steps:
   displayName: Install dependencies
 
 - script: yarn test
-  displayName: Run tests
+  displayName: Run unit tests
+
+- script: yarn global add npx
+  displayName: Install npx
+
+- script: start /B yarn start --silent
+  displayName: Run server for Cypress
+
+- script: npx cypress run
+  displayName: Run Cypress tests
 
 - task: RichCodeNavIndexer@0
   inputs:
