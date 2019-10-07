@@ -1,6 +1,7 @@
 {
     "extensions": [
         "dbaeumer.vscode-eslint",
-        "eamodio.gitlens"
+        "eamodio.gitlens",
+        "vsls-contrib.spaces"
     ]
 }
