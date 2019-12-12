@@ -14,3 +14,13 @@ To run tests with Cypress
 ```
 npx cypress open
 ```
+
+## Deploy
+
+This app is deployed with GitHub Pages to [vsls-contrib.github.io/guestbook](https://vsls-contrib.github.io/guestbook/)
+
+To create a new deployment run the following command
+
+```
+yarn run deploy
+```
