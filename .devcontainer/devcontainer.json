@@ -2,6 +2,8 @@
     "extensions": [
         "dbaeumer.vscode-eslint",
         "eamodio.gitlens",
-        "vsls-contrib.spaces"
+        "lostintangent.vsls-whiteboard",
+        "karigari.chat",
+        "vsls-contrib.codetour"
     ]
 }
