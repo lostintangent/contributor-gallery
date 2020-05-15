@@ -1,3 +1,4 @@
 {
-  "liveshare.featureSet": "insiders"
-  }
+  "liveshare.featureSet": "insiders",
+  "editor.formatOnSave": true
+}

@@ -3,8 +3,7 @@ import styled from "styled-components";
 
 export default function GuestbookGridCell({ signature, ...props }) {
     const cellContent = signature ?
-        <FittedImage src={`http://avatars.io/${signature.handle ? "twitter/" + signature.handle +
-         "/medium" : "" }`} alt={signature.message} {...props} /> :
+        <FittedImage src={`http://github.com/${signature.handle}.png`} alt={signature.message} {...props} /> :
         null;
 
     return <Cell>{cellContent}</Cell>;

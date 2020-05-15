@@ -4,6 +4,8 @@
         "eamodio.gitlens",
         "lostintangent.vsls-whiteboard",
         "karigari.chat",
-        "vsls-contrib.codetour"
-    ]
+        "esbenp.prettier-vscode"
+    ],
+    "forwardPorts": [3030],
+    "postCreateCommand": "npm start"
 }
