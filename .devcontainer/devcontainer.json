@@ -7,5 +7,5 @@
     "esbenp.prettier-vscode"
   ],
   "forwardPorts": [3030],
-  "postCreateCommand": "yarn install && npm start"
+  "postCreateCommand": "yarn install && yarn start"
 }

@@ -4,6 +4,9 @@
   "private": true,
   "homepage": "http://vsls-contrib.github.io/guestbook",
   "dependencies": {
+    "@types/express": "^4.17.6",
+    "@types/node": "^14.0.1",
+    "express": "^4.17.1",
     "mobx": "^5.6.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",

@@ -1,4 +1,4 @@
-# Visual Studio Live Share Guestbook 📖
+# Visual Studio Codespaces Guestbook 📖
 
 [![Build Status](https://dev.azure.com/vsls-contrib/vsls-guestbook/_apis/build/status/vsls-contrib.vsls-guestbook?branchName=master)](https://dev.azure.com/vsls-contrib/vsls-guestbook/_build/latest?definitionId=1&branchName=master)
 

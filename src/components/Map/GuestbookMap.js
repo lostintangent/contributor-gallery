@@ -4,14 +4,14 @@ import { Subheading } from "../Subheading";
 import styled from "styled-components";
 
 export default function GuestbookMap({ pins }) {
-    return (
-        <Container>
-            <Subheading>Visual Studio Live Share around the world!</Subheading>
-            <Map pins={pins} />
-        </Container>
-    );
+  return (
+    <Container>
+      <Subheading>Visual Studio Codespaces around the world!</Subheading>
+      <Map pins={pins} />
+    </Container>
+  );
 }
 
 const Container = styled.div`
-    margin-top: 2em;
+  margin-top: 2em;
 `;

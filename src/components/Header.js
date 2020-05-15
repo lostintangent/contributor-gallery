@@ -8,25 +8,28 @@ import TwitterButton from "./TwitterButton";
 import styled from "styled-components";
 
 export default function Header() {
-    return (
-        <Container>
-            <div>
-                <Heading>Visual Studio Live Share Guestbook</Heading>
-                <Subheading>Be a part of collaborative development history at //Discover Day 2019 <Emoji type="rocket" /></Subheading>
-            </div>
-            <TwitterButton hashTag="vsliveshare" />
-        </Container>
-    );
+  return (
+    <Container>
+      <div>
+        <Heading>Visual Studio Codespaces Guestbook</Heading>
+        <Subheading>
+          Be a part of cloud-based development history at Microsoft Build 2020{" "}
+          <Emoji type="rocket" />
+        </Subheading>
+      </div>
+      <TwitterButton hashTag="codespaces" />
+    </Container>
+  );
 }
 
 const Container = styled.div`
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 `;
 
 const Heading = styled.h1`
-    color: ${({ theme }) => theme.primaryColor};
-    font-size: 2em;
-    margin-bottom: 0.2em;
-    text-align: left;
+  color: ${({ theme }) => theme.primaryColor};
+  font-size: 2em;
+  margin-bottom: 0.2em;
+  text-align: left;
 `;

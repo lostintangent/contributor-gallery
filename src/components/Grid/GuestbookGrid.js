@@ -13,20 +13,24 @@ import styled from "styled-components";
  */
 export default class GuestbookGrid extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
-      signatures: signatures
-    }
+      signatures: signatures,
+    };
   }
 
   componentDidMount() {
+    fetch("/signatures").then((res) => res.json());
+
     // Determine whether we have any actual signatures
     // before we attempt to start the "active" carousel
-    var activeSignatures = this.state.signatures.filter(({ signature }) => typeof signature === "object");
+    var activeSignatures = this.state.signatures.filter(
+      ({ signature }) => typeof signature === "object"
+    );
     if (activeSignatures.length === 0) {
       return;
     }
-    
+
     this.updateActiveSignature(activeSignatures);
     setInterval(this.updateActiveSignature.bind(this, activeSignatures), 2000);
   }
@@ -34,11 +38,11 @@ export default class GuestbookGrid extends Component {
   /**
    * Updates the UI to visually indicate which of the current
    * signatures is "active", and therefore, highlighted more prominently.
-   * 
+   *
    * @param {Array} activeSignatures - An array of active signatures
    */
   updateActiveSignature(activeSignatures) {
-    activeSignatures.forEach(signature => delete signature.isActive);
+    activeSignatures.forEach((signature) => delete signature.isActive);
 
     const activeSignature = Math.floor(Math.random() * activeSignatures.length);
     activeSignatures[activeSignature].isActive = true;

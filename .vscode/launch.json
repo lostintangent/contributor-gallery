@@ -1,29 +1,32 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Chrome (Launch)",
-            "url": "http://localhost:3000",
-            "webRoot": "${workspaceFolder}",
-            "sourceMaps": true,
-            "smartStep": true,
-            "skipFiles": [
-                "<node_internals>/**/*.js"
-            ],
-            "breakOnLoad": true
-        },
-        {
-            "type": "chrome",
-            "request": "attach",
-            "name": "Chrome (Attach)",
-            "port": 9222,
-            "webRoot": "${workspaceFolder}",
-            "sourceMaps": true,
-            "skipFiles": [
-                "<node_internals>/**/*.js"
-            ]
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Node.js (Launch)",
+      "program": "${workspaceFolder}/server.js",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Chrome (Launch)",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "smartStep": true,
+      "skipFiles": ["<node_internals>/**/*.js"],
+      "breakOnLoad": true
+    },
+    {
+      "type": "chrome",
+      "request": "attach",
+      "name": "Chrome (Attach)",
+      "port": 9222,
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "skipFiles": ["<node_internals>/**/*.js"]
+    }
+  ]
 }

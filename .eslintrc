@@ -1,18 +1,20 @@
 {
-    "extends": ["eslint:recommended", "plugin:react/recommended"],
-    "env": {
-        "browser": true
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "no-var": "error",
+    "react/prop-types": "off",
+    "no-console": "off"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "modules": true,
+      "jsx": true,
+      "experimentalObjectRestSpread": true
     },
-    "rules": {
-        "no-var": "error",
-        "react/prop-types": "off"
-    },
-    "parserOptions": {
-        "ecmaFeatures": {
-            "modules": true,
-            "jsx": true,
-            "experimentalObjectRestSpread": true
-        },
-        "sourceType": "module"
-    }
+    "sourceType": "module"
+  }
 }
