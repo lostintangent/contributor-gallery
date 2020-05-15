@@ -1,11 +1,11 @@
 {
-    "extensions": [
-        "dbaeumer.vscode-eslint",
-        "eamodio.gitlens",
-        "lostintangent.vsls-whiteboard",
-        "karigari.chat",
-        "esbenp.prettier-vscode"
-    ],
-    "forwardPorts": [3030],
-    "postCreateCommand": "npm start"
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "lostintangent.vsls-whiteboard",
+    "karigari.chat",
+    "esbenp.prettier-vscode"
+  ],
+  "forwardPorts": [3030],
+  "postCreateCommand": "yarn install && npm start"
 }
