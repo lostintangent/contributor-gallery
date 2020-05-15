@@ -4,8 +4,8 @@ import styled from "styled-components";
 export default function GuestbookGridCell({ signature, ...props }) {
   const cellContent = signature ? (
     <FittedImage
-      src={`https://github.com/${signature.handle}.png`}
-      alt={signature.message}
+      src={`https://github.com/${signature.hndle}.png`}
+      title={signature.message}
       {...props}
     />
   ) : null;

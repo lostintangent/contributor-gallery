@@ -7,13 +7,13 @@ const app = express();
 
 app.use(express.static("public"));
 
-app.get("/", function (req, res) {
+const signatures = require("./src/signatures");
+
+app.get("/", function (_, res) {
   res.sendFile(path.join("public", "index.html"));
 });
 
-app.get("/signatures", function (req, res) {
-  const signatures = require("./src/model/signatures");
-
+app.get("/signatures", function (_, res) {
   markBonusSignatures(signatures);
   markSpecialSignatures(signatures);
 
