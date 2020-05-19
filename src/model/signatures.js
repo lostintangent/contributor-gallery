@@ -1,22 +1,54 @@
 export const signatures = [
-    { handle: "satyanadella", location: "California, USA", message: "I love live share 2" },
-    { handle: "scottgu", location: "California, USA", message: "I love live share 2" },
-    { handle: "lostintangent", location: "Washington, USA", message: "I love live share" },
-    { handle: "shanselman", location: "Washington, USA", message: "I love live share" },
-    { handle: "chuxel", location: "Minnesota, USA",message: "I love live share 2" },
-    { handle: "legomushroom", location: "California, USA", message: "I love live share 2" },
-    { handle: "jonwchu", location: "California, USA", message: "I love live share 2" },
-    { handle: "bradygaster", location: "California, USA", message: "I love live share 2" },
-    { handle: "davidkpiano", location: "California, USA", message: "I love live share 2" },
-    { handle: "chrisdias", location: "California, USA", message: "I love live share 2" },
-    { handle: "erichgamma", location: "California, USA", message: "I love live share 2" },
-    { handle: "pjmeyer", location: "California, USA", message: "I love live share 2" },
-    { handle: "srivatsn", location: "California, USA", message: "I love live share 2" },
-    { handle: "auchenberg", location: "California, USA", message: "I love live share 2" },
-    { handle: "weinand", location: "California, USA", message: "I love live share 2" },
-    { handle: "andysterland", location: "California, USA", message: "I love live share 2" },
-    { handle: "mattbierner", location: "California, USA", message: "I love live share 2" },
-    { handle: "csharpfritz", location: "California, USA", message: "I love live share 2" },
-    { handle: "acangialosi", location: "California, USA", message: "I love live share 2" },
-    { handle: "fiveisprime", location: "California, USA", message: "I love live share 2" }
+  {
+    handle: "satyanadella",
+    location: "Seattle, WA, USA",
+  },
+  {
+    handle: "scottgu",
+    location: "Seattle, WA, USA",
+  },
+  {
+    handle: "lostintangent",
+    location: "Seattle, WA, USA",
+  },
+  {
+    handle: "shanselman",
+    location: "Portland, OR, USA",
+  },
+  {
+    handle: "chuxel",
+    location: "Minneapolis, MN, USA",
+  },
+  {
+    handle: "legomushroom",
+    location: "Redmond, WA, USA",
+  },
+  {
+    handle: "jonwchu",
+    location: "Seattle, WA, USA",
+  },
+  {
+    handle: "chrisdias",
+    location: "Redmond, WA, USA",
+  },
+  {
+    handle: "erichgamma",
+    location: "Zurich, Switzerland",
+  },
+  {
+    handle: "pjmeyer",
+    location: "Seattle, WA, USA",
+  },
+  {
+    handle: "srivatsn",
+    location: "Bellevue, WA, USA",
+  },
+  {
+    handle: "acangialosi",
+    location: "Seattle, WA, USA",
+  },
+  {
+    handle: "fiveisprime",
+    location: "Seattle, WA, USA",
+  },
 ];
