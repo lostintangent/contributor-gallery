@@ -51,4 +51,8 @@ export const signatures = [
     handle: "fiveisprime",
     location: "Seattle, WA, USA",
   },
+  {
+    handle: "nikmd23",
+    location: "Austin, TX, USA",
+  },
 ];
