@@ -11,7 +11,7 @@
 
 To run tests with Cypress
 
-```
+```shell
 npx cypress open
 ```
 
