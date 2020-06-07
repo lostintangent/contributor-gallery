@@ -21,6 +21,6 @@ This app is deployed with GitHub Pages to [vsls-contrib.github.io/guestbook](htt
 
 To create a new deployment run the following command
 
-```
+```shell
 yarn run deploy
 ```
