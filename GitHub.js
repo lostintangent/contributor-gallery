@@ -1,1 +1,1 @@
-This was added on GitHub :D
+This was added on GitHub :D~
