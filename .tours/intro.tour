@@ -1,4 +1,10 @@
 {
   "title": "intro",
-  "steps": []
+  "steps": [
+    {
+      "file": "jsconfig.json",
+      "line": 4,
+      "description": "This is cool!"
+    }
+  ]
 }
