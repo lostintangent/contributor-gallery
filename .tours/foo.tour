@@ -2,7 +2,7 @@
   "title": "foo",
   "steps": [
     {
-      "file": "../../../../src/index.js",
+      "file": "src/index.js",
       "line": 6,
       "description": "This is step #1"
     }
