@@ -1,4 +1,10 @@
 {
   "title": "foo",
-  "steps": []
+  "steps": [
+    {
+      "file": "src/index.js",
+      "line": 6,
+      "description": "Foo!"
+    }
+  ]
 }
