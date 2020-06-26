@@ -9,8 +9,6 @@
 
 ## Tests
 
-
-
 To run tests with Cypress
 
 ```shell
