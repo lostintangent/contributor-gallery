@@ -1,4 +1,10 @@
 {
   "title": "foo",
-  "steps": []
+  "steps": [
+    {
+      "file": "../../../../vsls-contrib/guestbook/README.md",
+      "line": 12,
+      "description": "This is a tour!"
+    }
+  ]
 }
