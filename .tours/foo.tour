@@ -5,6 +5,11 @@
       "file": "src/index.js",
       "line": 6,
       "description": "Foo!"
+    },
+    {
+      "file": "src/model/bonusCells.js",
+      "line": 10,
+      "description": "Wow, this is cool!"
     }
   ]
 }
