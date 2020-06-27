@@ -5,6 +5,11 @@
       "file": "jsconfig.json",
       "line": 9,
       "description": "This is cool!"
+    },
+    {
+      "file": "README.md",
+      "line": 10,
+      "description": "Yeah it is!"
     }
   ]
 }
