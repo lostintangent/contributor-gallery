@@ -18,8 +18,8 @@ steps:
 - script: start /B yarn start --silent
   displayName: Run server for Cypress
 
-- script: npx cypress run
-  displayName: Run Cypress tests
+# - script: npx cypress run
+#   displayName: Run Cypress tests
 
 - task: RichCodeNavIndexer@0
   inputs:
