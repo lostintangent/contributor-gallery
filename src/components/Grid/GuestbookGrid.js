@@ -6,6 +6,7 @@ import React, { Component } from "react";
 import logoImageUrl from "./logo.svg";
 import signatures from "../../model/signatureMatrix";
 import styled from "styled-components";
+import { sayHello } from '../../utilities';
 
 /**
  * Represents the primary component, which
@@ -49,6 +50,7 @@ export default class GuestbookGrid extends Component {
   }
 
   render() {
+    sayHello();
     const cells = this.state.signatures.map((signature, index) => (
       <GuestbookGridCell key={index} {...signature} />
     ));
