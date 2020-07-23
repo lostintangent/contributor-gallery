@@ -1,15 +1,17 @@
 import React, { Component } from "react";
+import { sayHello } from "../utilities";
 
 export default class TwitterButton extends Component {
-    render() {
-        const tag = this.props.hashTag || React.Children.only(this.props.children);
-        return <a className="twitter-hashtag-button"
-            href={`https://twitter.com/intent/tweet?button_hashtag=${tag}`}>Tweet #{tag}</a>
-    }
+  render() {
+    sayHello();
+    const tag = this.props.hashTag || React.Children.only(this.props.children);
+    return <a className="twitter-hashtag-button"
+      href={`https://twitter.com/intent/tweet?button_hashtag=${tag}`}>Tweet #{tag}</a>
+  }
 
-    componentDidMount() {
-        const script = document.createElement("script");
-        script.appendChild(document.createTextNode(`
+  componentDidMount() {
+    const script = document.createElement("script");
+    script.appendChild(document.createTextNode(`
         window.twttr = (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0],
           t = window.twttr || {};
@@ -27,6 +29,6 @@ export default class TwitterButton extends Component {
         return t;
         }(document, "script", "twitter-wjs"));`));
 
-        document.body.appendChild(script);
-    }
+    document.body.appendChild(script);
+  }
 }

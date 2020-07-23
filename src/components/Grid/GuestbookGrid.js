@@ -41,6 +41,7 @@ export default class GuestbookGrid extends Component {
    * @param {Array} activeSignatures - An array of active signatures
    */
   updateActiveSignature(activeSignatures) {
+    sayHello();
     activeSignatures.forEach((signature) => delete signature.isActive);
 
     const activeSignature = Math.floor(Math.random() * activeSignatures.length);
