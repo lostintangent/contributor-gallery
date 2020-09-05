@@ -2,8 +2,6 @@
   "extensions": [
     "dbaeumer.vscode-eslint",
     "eamodio.gitlens",
-    "lostintangent.vsls-whiteboard",
-    "karigari.chat",
     "esbenp.prettier-vscode"
   ],
   "forwardPorts": [3030],
