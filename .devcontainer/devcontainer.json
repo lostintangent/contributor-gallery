@@ -4,6 +4,6 @@
     "eamodio.gitlens",
     "esbenp.prettier-vscode"
   ],
-  "forwardPorts": [3030],
+  "forwardPorts": [3000],
   "postCreateCommand": "yarn install"
 }
