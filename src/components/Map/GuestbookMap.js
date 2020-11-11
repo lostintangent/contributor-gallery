@@ -6,7 +6,7 @@ import styled from "styled-components";
 export default function GuestbookMap({ pins }) {
   return (
     <Container>
-      <Subheading>Visual Studio Codespaces around the world!</Subheading>
+      <Subheading>GitHub Codespaces around the world!</Subheading>
       <Map pins={pins} />
     </Container>
   );

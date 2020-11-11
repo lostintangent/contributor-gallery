@@ -11,9 +11,9 @@ export default function Header() {
   return (
     <Container>
       <div>
-        <Heading>Visual Studio Codespaces Guestbook</Heading>
+        <Heading>GitHub Codespaces Guestbook</Heading>
         <Subheading>
-          Be a part of cloud-based development history at Microsoft Build 2020{" "}
+          Be a part of cloud-based development history {" "}
           <Emoji type="rocket" />
         </Subheading>
       </div>
