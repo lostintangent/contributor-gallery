@@ -1,9 +1,10 @@
 {
-  "extensions": [
-    "dbaeumer.vscode-eslint",
-    "eamodio.gitlens",
-    "esbenp.prettier-vscode"
-  ],
-  "forwardPorts": [3000],
-  "postCreateCommand": "yarn install"
+  "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"],
+  "postCreateCommand": "yarn install",
+  "portsAttributes": {
+    "3000": {
+      "label": "Web app",
+      "onAutoForward": "openBrowser"
+    }
+  }
 }
