@@ -5,6 +5,9 @@
     "3000": {
       "label": "Web app",
       "onAutoForward": "openBrowser"
+    },
+    "5992": {
+      "onAutoForward": "ignore"
     }
   }
 }
