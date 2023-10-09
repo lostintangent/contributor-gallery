@@ -1,6 +1,6 @@
 {
   "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"],
-  "postCreateCommand": "yarn install",
+  "postCreateCommand": "npm install",
   "portsAttributes": {
     "3000": {
       "label": "Web app",
