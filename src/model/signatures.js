@@ -109,5 +109,65 @@ module.exports = [
       location: "California, USA",
       message: "I love live share 2",
     },
+    {
+      handle: "colebemis",
+      location: "California, USA",
+      message: "I love live share 2",
+    },
+    {
+      handle: "wattenberger",
+      location: "California, USA",
+      message: "I love live share 2",
+    },
+    {
+      handle: "mylesborins",
+      location: "California, USA",
+      message: "I love live share 2",
+    },
+    {
+      handle: "digitarald",
+      location: "California, USA",
+      message: "I love live share 2",
+    },
+    {
+      handle: "shuyinzjk",
+      location: "California, USA",
+      message: "I love live share 2",
+    },
+    {
+      handle: "ryanjsalva",
+      location: "California, USA",
+      message: "I love live share 2",
+    },
+    {
+      handle: "skylar-anderson",
+      location: "California, USA",
+      message: "I love live share 2",
+    },
+    {
+      handle: "abbydab90",
+      location: "California, USA",
+      message: "I love live share 2",
+    },
+    {
+      handle: "bhawken",
+      location: "California, USA",
+      message: "I love live share 2",
+    },
+    {
+      handle: "coledriver",
+      location: "California, USA",
+      message: "I love live share 2",
+    },
+    {
+      handle: "demetris11",
+      location: "California, USA",
+      message: "I love live share 2",
+    },
+    {
+      handle: "hsenag",
+      location: "California, USA",
+      message: "I love live share 2",
+    }
   ];
   
