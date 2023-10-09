@@ -13,8 +13,7 @@ export default function Header() {
       <div>
         <Heading>GitHub Codespaces Guestbook</Heading>
         <Subheading>
-          Be a part of cloud-based development history {" "}
-          <Emoji type="rocket" />
+          Be a part of cloud-based development history <Emoji type="rocket" />
         </Subheading>
       </div>
       <TwitterButton hashTag="codespaces" />

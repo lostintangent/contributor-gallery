@@ -3,7 +3,18 @@ import React from "react";
 import { Subheading } from "../Subheading";
 import styled from "styled-components";
 
-export default function GuestbookMap({ pins }) {
+interface Pin {
+  location: string;
+  signatureCount: number;
+  latitude: number;
+  longitude: number;
+}
+
+interface GuestbookMapProps {
+  pins: Pin[];
+}
+
+export default function GuestbookMap({ pins }: GuestbookMapProps) {
   return (
     <Container>
       <Subheading>GitHub Codespaces around the world!</Subheading>

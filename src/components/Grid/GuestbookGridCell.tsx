@@ -1,7 +1,22 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function GuestbookGridCell({ signature, ...props }) {
+interface GuestbookGridCellProps {
+  signature?: Signature;
+  isActive?: boolean;
+  isBonus?: boolean;
+  isSpecial?: boolean;
+}
+
+interface Signature {
+  handle: string;
+  message: string;
+}
+
+export default function GuestbookGridCell({
+  signature,
+  ...props
+}: GuestbookGridCellProps) {
   const cellContent = signature ? (
     <FittedImage
       src={`https://github.com/${signature.handle}.png`}

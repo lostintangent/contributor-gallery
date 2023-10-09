@@ -7,12 +7,27 @@ import logoImageUrl from "./logo.svg";
 import signatures from "../../model/signatureMatrix";
 import styled from "styled-components";
 
+interface Signature {
+  handle: string;
+  message: string;
+  isActive?: boolean;
+  isBonus?: boolean;
+  isSpecial?: boolean;
+}
+
+interface GuestbookGridState {
+  signatures: Array<Signature | null>;
+}
+
 /**
  * Represents the primary component, which
  * displays the avatars for each user signature.
  */
-export default class GuestbookGrid extends Component {
-  constructor(props) {
+export default class GuestbookGrid extends Component<
+  Record<string, never>,
+  GuestbookGridState
+> {
+  constructor(props: Record<string, never>) {
     super(props);
     this.state = {
       signatures: signatures,
@@ -23,14 +38,17 @@ export default class GuestbookGrid extends Component {
     // Determine whether we have any actual signatures
     // before we attempt to start the "active" carousel
     let activeSignatures = this.state.signatures.filter(
-      ({ signature }) => typeof signature === "object"
-    );
+      (signature) => signature && typeof signature === "object"
+    ) as Signature[];
     if (activeSignatures.length === 0) {
       return;
     }
 
     this.updateActiveSignature(activeSignatures);
-    setInterval(this.updateActiveSignature.bind(this, activeSignatures), 2000);
+    setInterval(
+      this.updateActiveSignature.bind(this, activeSignatures),
+      2000
+    );
   }
 
   /**
@@ -39,7 +57,7 @@ export default class GuestbookGrid extends Component {
    *
    * @param {Array} activeSignatures - An array of active signatures
    */
-  updateActiveSignature(activeSignatures) {
+  updateActiveSignature(activeSignatures: Signature[]) {
     activeSignatures.forEach((signature) => delete signature.isActive);
 
     const activeSignature = Math.floor(Math.random() * activeSignatures.length);

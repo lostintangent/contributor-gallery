@@ -8,17 +8,17 @@ import styled, { ThemeProvider } from "styled-components";
 import theme from "./theme";
 
 export default function App() {
-    return (
-        <ThemeProvider theme={theme}>
-            <AppContainer>
-                <Header />
-                <GuestbookGrid />
-                <GuestbookMap pins={pins} />
-            </AppContainer>
-        </ThemeProvider>
-    );
+  return (
+    <ThemeProvider theme={theme}>
+      <AppContainer>
+        <Header />
+        <GuestbookGrid />
+        <GuestbookMap pins={pins} />
+      </AppContainer>
+    </ThemeProvider>
+  );
 }
 
 const AppContainer = styled.div`
-    width: 900px;
+  width: 900px;
 `;
