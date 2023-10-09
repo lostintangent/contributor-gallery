@@ -16,6 +16,8 @@
     "dev": "serve -s build",
     "start": "npm run dev",
     "build": "react-scripts build",
+    "lint": "eslint",
+    "compile": "npm run build",
     "test": "cross-env CI=true react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
@@ -24,6 +26,7 @@
   "devDependencies": {
     "@types/react": "^18.2.25",
     "cross-env": "^7.0.3",
+    "eslint": "^8.51.0",
     "eslint-plugin-react": "^7.32.2",
     "gh-pages": "^2.1.1",
     "serve": "^14.2.1"
