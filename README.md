@@ -1,6 +1,6 @@
 # GitHub Copilot Guestbook 📖
 
-![image](https://user-images.githubusercontent.com/116461/92313696-79b6d180-ef83-11ea-9fce-eb57e3ef0182.png)
+![image](https://github.com/lostintangent/guestbook/assets/116461/ff860cd4-d2a4-49f0-8722-17d7f8f00dd2)
 
 ## Getting Started
 
