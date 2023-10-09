@@ -1,4 +1,4 @@
-# GitHub Codespaces Guestbook 📖
+# GitHub Copilot Guestbook 📖
 
 ![image](https://user-images.githubusercontent.com/116461/92313696-79b6d180-ef83-11ea-9fce-eb57e3ef0182.png)
 

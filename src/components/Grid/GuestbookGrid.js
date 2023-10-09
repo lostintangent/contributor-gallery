@@ -15,7 +15,7 @@ export default class GuestbookGrid extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      signatures: signatures,
+      signatures
     };
   }
 
@@ -50,7 +50,7 @@ export default class GuestbookGrid extends Component {
 
   render() {
     const cells = this.state.signatures.map((signature, index) => (
-      <GuestbookGridCell key={index} {...signature} />
+      <GuestbookGridCell key={index} signature={signature} />
     ));
 
     return (

@@ -1,6 +1,6 @@
-import { injectGlobal } from "styled-components";
+import { createGlobalStyle} from "styled-components";
 
-injectGlobal`
+export const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
     margin: 0;

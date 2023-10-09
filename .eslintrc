@@ -10,6 +10,7 @@
     "no-console": "off"
   },
   "parserOptions": {
+    "ecmaVersion": "latest",
     "ecmaFeatures": {
       "modules": true,
       "jsx": true,

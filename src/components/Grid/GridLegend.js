@@ -3,8 +3,7 @@ import React from "react";
 
 import styled from "styled-components";
 
-// To check: Where is GridLegend used?
-export function GridLegend({ bonusLabel = "Bonus"}) {
+export function GridLegend() {
     return (
         <Container>
             <LegendItem><BonusSquare /> = Bonus Cell (<Emoji type="shirt" />)</LegendItem>
@@ -27,11 +26,11 @@ const ColorSquare = styled.div`
     width: 20px;
 `;
 
-const BonusSquare = ColorSquare.extend`
+const BonusSquare = styled(ColorSquare)`
     border-color: ${({ theme: { bonusColor }}) => bonusColor};
 `;
 
-const SpecialSquare = ColorSquare.extend`
+const SpecialSquare = styled(ColorSquare)`
     border-color: ${({ theme: { specialColor }}) => specialColor};
 `;
 

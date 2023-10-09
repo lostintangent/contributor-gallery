@@ -1,12 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function GuestbookGridCell({ signature, ...props }) {
-  const cellContent = signature ? (
+export default function GuestbookGridCell({ signature }) {
+  const cellContent = signature.signature ? (
     <FittedImage
-      src={`https://github.com/${signature.handle}.png`}
-      title={signature.message}
-      {...props}
+      src={`https://github.com/${signature.signature.handle}.png`}
+      {...signature}
     />
   ) : null;
 
