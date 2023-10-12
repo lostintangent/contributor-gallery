@@ -1,4 +1,4 @@
-import { createGlobalStyle} from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -14,10 +14,10 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export default {
-    bonusColor: "orange",
-    borderStyle: "0.5px solid #666",
-    cellSize: "30px",
-    primaryColor: "#9082CD",
-    secondaryColor: "#666",
-    specialColor: "gold"
+  bonusColor: "orange",
+  borderStyle: "0.5px solid #666",
+  cellSize: "30px",
+  primaryColor: "#9082CD",
+  secondaryColor: "#666",
+  specialColor: "gold",
 };

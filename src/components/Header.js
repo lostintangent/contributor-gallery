@@ -9,10 +9,11 @@ export default function Header() {
   return (
     <Container>
       <div>
-        <Heading><img src={iconUrl} style={{ width: 25 }} /> GitHub Copilot Guestbook</Heading>
+        <Heading>
+          <img src={iconUrl} style={{ width: 25 }} /> GitHub Copilot Guestbook
+        </Heading>
         <Subheading>
-          Be a part of AI-powered development history {" "}
-          <Emoji type="rocket" />
+          Be a part of AI-powered development history <Emoji type="rocket" />
         </Subheading>
       </div>
     </Container>

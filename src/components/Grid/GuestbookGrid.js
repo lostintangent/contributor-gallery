@@ -14,7 +14,7 @@ export default class GuestbookGrid extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      signatures
+      signatures,
     };
   }
 

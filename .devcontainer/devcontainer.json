@@ -1,5 +1,9 @@
 {
-  "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"],
+  "customizations": {
+    "codespaces": {
+      "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+    }
+  },
   "postCreateCommand": "npm install",
   "portsAttributes": {
     "3000": {
