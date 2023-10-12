@@ -16,19 +16,24 @@
     "dev": "serve -n -s build",
     "start": "npm run dev",
     "build": "react-scripts build",
-    "lint": "eslint",
+    "lint": "eslint .",
+    "prettier": "prettier --write src",
     "compile": "npm run build",
     "test": "cross-env CI=true react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "preinstall": "rm -rf node_modules || true",
+    "postinstall": "npm run lint && npm run prettier"
   },
   "devDependencies": {
     "@types/react": "^18.2.25",
     "cross-env": "^7.0.3",
     "eslint": "^8.51.0",
     "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-prettier": "^4.0.0",
     "gh-pages": "^2.1.1",
+    "prettier": "^2.5.1",
     "serve": "^14.2.1"
   },
   "browserslist": {
