@@ -1,5 +1,5 @@
 {
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended"],
   "env": {
     "browser": true,
     "node": true
@@ -17,5 +17,6 @@
       "experimentalObjectRestSpread": true
     },
     "sourceType": "module"
-  }
+  },
+  "plugins": ["prettier"]
 }
