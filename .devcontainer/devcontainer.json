@@ -4,7 +4,7 @@
       "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
     }
   },
-  "postCreateCommand": "npm install",
+  "postCreateCommand": "",
   "portsAttributes": {
     "3000": {
       "label": "Web app",
