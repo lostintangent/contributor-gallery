@@ -1,10 +1,22 @@
 import React from "react";
 import styled from "styled-components";
+import { ThemeProps } from "../theme";
 
-export default function GuestbookGridCell({ signature }) {
+interface Signature {
+  signature: string | null;
+  isBonus?: boolean;
+  isSpecial?: boolean;
+  isActive?: boolean;
+}
+
+interface GuestbookGridCellProps {
+  signature: Signature;
+}
+
+export default function GuestbookGridCell({ signature }: GuestbookGridCellProps): JSX.Element {
   const cellContent = signature.signature ? (
     <FittedImage
-      src={`https://github.com/${signature.signature.handle}.png`}
+      src={`https://github.com/${signature.signature}.png`}
       {...signature}
     />
   ) : null;
@@ -12,17 +24,17 @@ export default function GuestbookGridCell({ signature }) {
   return <Cell>{cellContent}</Cell>;
 }
 
-const borderStyle = ({ theme: { borderStyle } }) => borderStyle;
-const cellSize = ({ theme: { cellSize } }) => cellSize;
+const borderStyle = ({ theme: { borderStyle } }: ThemeProps) => borderStyle;
+const cellSize = ({ theme: { cellSize } }: ThemeProps) => cellSize;
 
-const Cell = styled.div`
+const Cell = styled.div<ThemeProps>`
   border-bottom: ${borderStyle};
   border-right: ${borderStyle};
   height: ${cellSize};
   width: ${cellSize};
 `;
 
-const FittedImage = styled.img`
+const FittedImage = styled.img<Signature & ThemeProps>`
   border: ${({ isActive }) => (isActive ? 5 : 0)}px solid
     ${({ theme: { primaryColor } }) => primaryColor};
   box-sizing: content-box;

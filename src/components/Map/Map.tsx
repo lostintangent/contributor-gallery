@@ -2,11 +2,23 @@
 
 import React, { Component } from "react";
 import styled from "styled-components";
+import { ThemeProps } from "../theme";
 
 const credentials =
   "Aoj1fy4YAzycGalaBO78mle0i7ugx4q46SwWrMPCQYsKbVQ1-Ubq6Q17xlrxM-1W";
 
-export default class Map extends Component {
+interface Pin {
+  location: string;
+  signatureCount: number;
+  latitude: number;
+  longitude: number;
+}
+
+interface MapProps {
+  pins: Pin[];
+}
+
+export default class Map extends Component<MapProps> {
   componentDidMount() {
     // The Bing map control requires a global JS function that it
     // can trigger in order to initialize once the script is downloaded.
@@ -18,7 +30,7 @@ export default class Map extends Component {
     document.body.appendChild(script);
   }
 
-  loadMap(pins) {
+  loadMap(pins: Pin[]) {
     const map = new Microsoft.Maps.Map("#guestbook-map", {
       credentials,
       animate: true,
@@ -45,7 +57,7 @@ export default class Map extends Component {
   }
 }
 
-const Container = styled.div`
+const Container = styled.div<ThemeProps>`
   border: ${({ theme: { borderStyle } }) => borderStyle};
   height: 400px;
   position: relative;

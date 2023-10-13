@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ES2022",
+    "outDir": "out",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "strict": true,
+    "moduleResolution": "node",
+    "typeRoots": ["./src/@types", "./node_modules/@types"]
+  },
+  "include": [
+    "src/**/*.tsx", "server.js"
+  ]
+}

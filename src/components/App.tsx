@@ -5,9 +5,9 @@ import React from "react";
 
 import pins from "../model/pins";
 import styled, { ThemeProvider } from "styled-components";
-import theme, { GlobalStyle } from "./theme";
+import theme, { GlobalStyle, ThemeProps } from "./theme";
 
-export default function App() {
+export default function App(): JSX.Element {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
@@ -20,6 +20,6 @@ export default function App() {
   );
 }
 
-const AppContainer = styled.div`
+const AppContainer = styled.div<ThemeProps>`
   width: 900px;
 `;

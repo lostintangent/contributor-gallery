@@ -1,8 +1,9 @@
 import Emoji from "../Emoji";
 import React from "react";
 import styled from "styled-components";
+import { ThemeProps } from "../theme";
 
-export default function GridArrow() {
+export default function GridArrow(): JSX.Element {
   return (
     <ArrowContainer>
       <ArrowLabel>
@@ -27,7 +28,7 @@ const ArrowImage = styled.img`
     width: 150px;
 `;*/
 
-const ArrowLabel = styled.span`
+const ArrowLabel = styled.span<ThemeProps>`
   color: ${({ theme: { primaryColor } }) => primaryColor};
   font-size: 1.5em;
   font-weight: bold;

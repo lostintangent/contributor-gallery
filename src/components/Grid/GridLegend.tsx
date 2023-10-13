@@ -2,8 +2,9 @@ import Emoji from "../Emoji";
 import React from "react";
 
 import styled from "styled-components";
+import { ThemeProps } from "../theme";
 
-export function GridLegend() {
+export function GridLegend(): JSX.Element {
     return (
         <Container>
             <LegendItem><BonusSquare /> = Bonus Cell (<Emoji type="shirt" />)</LegendItem>
@@ -18,7 +19,7 @@ const Container = styled.div`
     margin-bottom: 0.8em;
 `;
 
-const ColorSquare = styled.div`
+const ColorSquare = styled.div<ThemeProps>`
     border-style: solid;
     border-width: 4px;
     height: 20px;

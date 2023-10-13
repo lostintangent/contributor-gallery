@@ -4,8 +4,9 @@ import React from "react";
 import iconUrl from "./icon.svg";
 import { Subheading } from "./Subheading";
 import styled from "styled-components";
+import { ThemeProps } from "../theme";
 
-export default function Header() {
+export default function Header(): JSX.Element {
   return (
     <Container>
       <div>
@@ -25,7 +26,7 @@ const Container = styled.div`
   justify-content: space-between;
 `;
 
-const Heading = styled.h1`
+const Heading = styled.h1<ThemeProps>`
   color: ${({ theme }) => theme.primaryColor};
   font-size: 2em;
   margin-bottom: 0.2em;

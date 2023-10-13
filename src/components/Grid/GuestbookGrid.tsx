@@ -5,13 +5,25 @@ import React, { Component } from "react";
 import logoImageUrl from "./logo.svg";
 import signatures from "../../model/signatureMatrix";
 import styled from "styled-components";
+import { ThemeProps } from "../theme";
+
+interface Signature {
+  signature: string | null;
+  isBonus?: boolean;
+  isSpecial?: boolean;
+  isActive?: boolean;
+}
+
+interface GuestbookGridState {
+  signatures: Signature[];
+}
 
 /**
  * Represents the primary component, which
  * displays the avatars for each user signature.
  */
-export default class GuestbookGrid extends Component {
-  constructor(props) {
+export default class GuestbookGrid extends Component<{}, GuestbookGridState> {
+  constructor(props: {}) {
     super(props);
     this.state = {
       signatures,
@@ -22,7 +34,7 @@ export default class GuestbookGrid extends Component {
     // Determine whether we have any actual signatures
     // before we attempt to start the "active" carousel
     let activeSignatures = this.state.signatures.filter(
-      ({ signature }) => typeof signature === "object"
+      ({ signature }) => typeof signature === "string"
     );
     if (activeSignatures.length === 0) {
       return;
@@ -38,7 +50,7 @@ export default class GuestbookGrid extends Component {
    *
    * @param {Array} activeSignatures - An array of active signatures
    */
-  updateActiveSignature(activeSignatures) {
+  updateActiveSignature(activeSignatures: Signature[]) {
     activeSignatures.forEach((signature) => delete signature.isActive);
 
     const activeSignature = Math.floor(Math.random() * activeSignatures.length);
@@ -61,7 +73,7 @@ export default class GuestbookGrid extends Component {
   }
 }
 
-const Grid = styled.div`
+const Grid = styled.div<ThemeProps>`
   border-left: ${({ theme: { borderStyle } }) => borderStyle};
   border-top: ${({ theme: { borderStyle } }) => borderStyle};
   display: flex;

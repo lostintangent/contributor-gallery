@@ -1,5 +1,10 @@
 {
-  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
   "env": {
     "browser": true,
     "node": true
@@ -7,8 +12,10 @@
   "rules": {
     "no-var": "error",
     "react/prop-types": "off",
-    "no-console": "off"
+    "no-console": "off",
+    "@typescript-eslint/no-explicit-any": "off"
   },
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
     "ecmaFeatures": {
@@ -18,5 +25,5 @@
     },
     "sourceType": "module"
   },
-  "plugins": ["prettier"]
+  "plugins": ["prettier", "@typescript-eslint"]
 }
