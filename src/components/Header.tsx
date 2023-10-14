@@ -4,18 +4,20 @@ import React from "react";
 import iconUrl from "./icon.svg";
 import { Subheading } from "./Subheading";
 import styled from "styled-components";
-import { ThemeProps } from "../theme";
+import { ThemeProps } from "./theme";
+import RepoPicker from "./RepoPicker";
 
 export default function Header(): JSX.Element {
   return (
     <Container>
       <div>
         <Heading>
-          <img src={iconUrl} style={{ width: 25 }} /> GitHub Copilot Guestbook
+          <img src={iconUrl} style={{ width: 25 }} /> Contributor Gallery
         </Heading>
         <Subheading>
-          Be a part of AI-powered development history <Emoji type="rocket" />
+          Celebrating the awesomeness of the open source community <Emoji type="rocket" />
         </Subheading>
+        <RepoPicker />
       </div>
     </Container>
   );

@@ -1,5 +1,5 @@
 {
-  "name": "guestbook",
+  "name": "contributor-gallery",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,15 +21,12 @@
     "build": "react-scripts build",
     "lint": "eslint .",
     "prettier": "prettier --write src",
-    "compile": "tsc",
-    "test": "cross-env CI=true react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
+    "compile": "npm run build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@types/gh-pages": "^3.0.2",
-    "@types/serve": "^11.3.2",
     "@typescript-eslint/eslint-plugin": "^5.8.0",
     "@typescript-eslint/parser": "^5.8.0",
     "cross-env": "^7.0.3",

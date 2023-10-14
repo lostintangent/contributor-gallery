@@ -9,9 +9,8 @@
     "jsx": "react",
     "strict": true,
     "moduleResolution": "node",
-    "typeRoots": ["./src/@types", "./node_modules/@types"]
   },
   "include": [
-    "src/**/*.tsx", "server.js"
+    "src/**/*"
   ]
 }

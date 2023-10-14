@@ -5,6 +5,7 @@ const EMOJIS: Record<string, string> = {
   hat: "🎩",
   rocket: "🚀",
   shirt: "👕",
+  foldedHands: "🙏"
 };
 
 type EmojiName = keyof typeof EMOJIS;

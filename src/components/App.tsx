@@ -1,9 +1,7 @@
-import GuestbookGrid from "./Grid/GuestbookGrid";
-import GuestbookMap from "./Map/GuestbookMap";
+import ContributorGallery from "./Gallery/ContributorGallery";
 import Header from "./Header";
 import React from "react";
 
-import pins from "../model/pins";
 import styled, { ThemeProvider } from "styled-components";
 import theme, { GlobalStyle, ThemeProps } from "./theme";
 
@@ -13,8 +11,7 @@ export default function App(): JSX.Element {
       <GlobalStyle />
       <AppContainer>
         <Header />
-        <GuestbookGrid />
-        <GuestbookMap pins={pins} />
+        <ContributorGallery />
       </AppContainer>
     </ThemeProvider>
   );
