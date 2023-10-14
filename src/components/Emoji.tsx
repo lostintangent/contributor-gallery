@@ -7,8 +7,10 @@ const EMOJIS: Record<string, string> = {
   shirt: "👕",
 };
 
+type EmojiName = keyof typeof EMOJIS;
+
 interface EmojiProps {
-  type: string;
+  type: EmojiName;
 }
 
 /**
