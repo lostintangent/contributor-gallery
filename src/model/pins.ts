@@ -41,4 +41,9 @@ export default [
     latitude: 27.964157,
     longitude: -82.452606,
   },
-];
+] as {
+  location: string;
+  signatureCount: number;
+  latitude: number;
+  longitude: number;
+}[];

@@ -3,6 +3,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { ThemeProps } from "../theme";
+import { Map as BingMap, Pushpin, Location } from "../../@types/bingmaps";
 
 const credentials =
   "Aoj1fy4YAzycGalaBO78mle0i7ugx4q46SwWrMPCQYsKbVQ1-Ubq6Q17xlrxM-1W";
@@ -39,15 +40,15 @@ export default class Map extends Component<MapProps> {
       enableSearchLogo: false,
       enableClickableLogo: false,
       zoom: 2,
-    });
+    }) as BingMap;
 
     pins.forEach(({ location, signatureCount, latitude, longitude }) => {
-      const pinLocation = new Microsoft.Maps.Location(latitude, longitude);
+      const pinLocation = new Microsoft.Maps.Location(latitude, longitude) as Location;
       map.entities.push(
         new Microsoft.Maps.Pushpin(pinLocation, {
           title: location,
           text: signatureCount.toString(),
-        })
+        }) as Pushpin
       );
     });
   }
