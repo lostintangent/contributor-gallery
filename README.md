@@ -1,6 +1,6 @@
 # GitHub Contributor Gallery 📖
 
-![image](https://github.com/lostintangent/wall-of-contributors/assets/116461/ea306366-e060-4de8-86dd-36cf6256a798)
+![image](https://github.com/lostintangent/contributor-gallery/assets/116461/b5191c96-611e-4f03-ad80-f830cd9a6ce1)
 
 ## Getting Started
 
