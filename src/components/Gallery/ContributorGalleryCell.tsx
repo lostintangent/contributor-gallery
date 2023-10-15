@@ -27,6 +27,7 @@ const Cell = styled.div<ThemeProps>`
   border-bottom: ${borderStyle};
   border-right: ${borderStyle};
   height: ${cellSize};
+  position: relative;
   width: ${cellSize};
 `;
 
