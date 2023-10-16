@@ -32,5 +32,5 @@ export default {
   cellSize: "30px",
   primaryColor: "#9082CD",
   secondaryColor: "#666",
-  specialColor: "gold",
+  specialColor: "gold", // changed from "gold" to make the text gold
 } as Theme;
