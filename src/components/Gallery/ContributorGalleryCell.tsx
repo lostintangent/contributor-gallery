@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { ThemeProps } from "../theme";
 import { MatrixCell } from "../../model/contributorsMatrix";
+import LoginText from "./LoginText"; // Import the LoginText component
 
 interface ContributorGalleryCellProps {
   cell: MatrixCell;
@@ -11,10 +12,13 @@ export default function ContributorGalleryCell({
   cell,
 }: ContributorGalleryCellProps): JSX.Element {
   const cellContent = cell.contributor ? (
-    <FittedImage
-      src={cell.contributor.avatar_url}
-      {...cell}
-    />
+    <>
+      <FittedImage
+        src={cell.contributor.avatar_url}
+        {...cell}
+      />
+      {cell.isActive && <LoginText>{cell.contributor.login}</LoginText>}
+    </>
   ) : null;
 
   return <Cell>{cellContent}</Cell>;
