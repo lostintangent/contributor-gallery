@@ -11,10 +11,13 @@ export default function ContributorGalleryCell({
   cell,
 }: ContributorGalleryCellProps): JSX.Element {
   const cellContent = cell.contributor ? (
-    <FittedImage
-      src={cell.contributor.avatar_url}
-      {...cell}
-    />
+    <>
+      <FittedImage
+        src={cell.contributor.avatar_url}
+        {...cell}
+      />
+      {cell.isActive ? <LoginText login={cell.contributor.login} /> : null}
+    </>
   ) : null;
 
   return <Cell>{cellContent}</Cell>;
@@ -41,4 +44,12 @@ const FittedImage = styled.img<MatrixCell & ThemeProps>`
   transition: transform 2s ease;
   z-index: ${({ isActive }) =>
     isActive ? 10 : 1};
+`;
+
+const LoginText = styled.span<{ login: string } & ThemeProps>`
+  color: gold;
+  font-size: ${cellSize};
+  position: absolute;
+  text-shadow: 1px 1px 1px black;
+  z-index: 10;
 `;
