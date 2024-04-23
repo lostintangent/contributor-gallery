@@ -11,10 +11,13 @@ export default function ContributorGalleryCell({
   cell,
 }: ContributorGalleryCellProps): JSX.Element {
   const cellContent = cell.contributor ? (
-    <FittedImage
-      src={cell.contributor.avatar_url}
-      {...cell}
-    />
+    <>
+      <GitHubHandle isActive={cell.isActive}>{cell.contributor.login}</GitHubHandle>
+      <FittedImage
+        src={cell.contributor.avatar_url}
+        {...cell}
+      />
+    </>
   ) : null;
 
   return <Cell>{cellContent}</Cell>;
@@ -29,6 +32,19 @@ const Cell = styled.div<ThemeProps>`
   height: ${cellSize};
   position: relative;
   width: ${cellSize};
+`;
+
+const GitHubHandle = styled.div<{ isActive?: boolean } & ThemeProps>`
+  color: ${({ theme }) => theme.specialColor};
+  display: ${({ isActive }) => (isActive ? 'block' : 'none')};
+
+  font-size: ${({ theme }) => theme.cellSize};
+  position: absolute;
+  text-align: center;
+  text-shadow: 1px 1px 0px #000, -1px -1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000;
+  top: 0;
+  width: 100%;
+  z-index: 11;
 `;
 
 const FittedImage = styled.img<MatrixCell & ThemeProps>`
