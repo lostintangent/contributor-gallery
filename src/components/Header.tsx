@@ -15,7 +15,7 @@ export default function Header(): JSX.Element {
           <img src={iconUrl} style={{ width: 25 }} /> Contributor Gallery
         </Heading>
         <Subheading>
-          Celebrating the awesomeness of the open source community <Emoji type="rocket" />
+          Celebrating the awesomeness of the open source community! <Emoji type="rocket" />
         </Subheading>
         <RepoPicker />
       </div>
