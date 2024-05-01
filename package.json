@@ -16,10 +16,9 @@
     "typescript": "^4.5.4"
   },
   "scripts": {
-    "dev": "serve -n -s build",
-    "start": "npm run dev",
+    "dev": "react-scripts start",
+    "start": "serve -n -s build",
     "build": "react-scripts build",
-    "lint": "eslint .",
     "prettier": "prettier --write src",
     "compile": "npm run build",
     "predeploy": "npm run build",
