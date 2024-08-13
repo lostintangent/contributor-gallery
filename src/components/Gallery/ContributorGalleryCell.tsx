@@ -50,7 +50,7 @@ const FittedImage = styled.img<MatrixCell & ThemeProps>`
 
 
 const LoginText = styled.span<ThemeProps>`
-  color: blue;
+  color: green;
   font-size: ${({ theme: { cellSize } }) => cellSize};
   position: absolute;
   text-align: center;
